@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Habari\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-21 00:00+0000\n"
-"PO-Revision-Date: 2013-04-27 09:15+0000\n"
+"POT-Creation-Date: 2013-04-28 00:00+0000\n"
+"PO-Revision-Date: 2013-04-28 09:11+0000\n"
 "Last-Translator: chrismeller <chris@doesnthaveone.com>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/habari/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -220,70 +220,74 @@ msgstr "Serwer XMLRPC przyjmuje tylko żądania POST."
 msgid "Unknown XMLRPC Exception"
 msgstr "Nieznany wyjątek XMLRPC"
 
+#: classes/stackitem.php:54
+msgid "Requested property @name does not exist."
+msgstr ""
+
 #: classes/formcontrol.php:90
 #, php-format
 msgid "The FormControl type \"%s\" is invalid."
 msgstr ""
 
 #. @locale Habari tried to create a Bitmask with the wrong arguments
-#: classes/bitmask.php:33
+#: classes/bitmask.php:37
 msgid ""
 "Bitmask constructor expects either no arguments or an array as a first "
 "argument"
 msgstr "Maska bitowa konstruktora nie oczekuje żadnych argumentów lub tablicy jako pierwszego argumentu."
 
 #. @locale Habari tried to create a new Bitmask with too many flags
-#: classes/bitmask.php:38
+#: classes/bitmask.php:42
 msgid "Bitmask can have a maximum of PHP_INT_MAX >> 1 flags"
 msgstr ""
 
 #. @locale Habari tried to create a new Bitmask object with invalid values in
 #. the second argument
-#: classes/bitmask.php:46 classes/bitmask.php:62
+#: classes/bitmask.php:50 classes/bitmask.php:66
 msgid ""
 "Bitmask constructor second argument must either be an integer within the "
 "valid range, the name of a flag, or full"
 msgstr ""
 
 #. @locale Habari tried to set the wrong type of value
-#: classes/bitmask.php:82
+#: classes/bitmask.php:86
 msgid "Bitmask full toggle must be boolean"
 msgstr ""
 
 #. @locale Habari tried to set the wrong kind of value
-#: classes/bitmask.php:96
+#: classes/bitmask.php:100
 msgid ""
 "Setting bitmask value by array must use array with same length as number of "
 "flags"
 msgstr ""
 
 #. @locale Habari tried to set the wrong kind of value
-#: classes/bitmask.php:102 classes/bitmask.php:122
+#: classes/bitmask.php:106 classes/bitmask.php:126
 msgid "Bitmask values must be boolean"
 msgstr "Wartości maski bitowej muszą być typu boolean."
 
 #. @locale Habari tried to set the wrong kind of value
-#: classes/bitmask.php:116
+#: classes/bitmask.php:120
 msgid ""
 "Bitmask value must either be an integer within the valid range or an array "
 "of booleans"
 msgstr ""
 
 #. @locale Habari tried to set a value that doesn't exist
-#: classes/bitmask.php:129
+#: classes/bitmask.php:133
 msgid "Bitmask cannot set non-existent flag"
 msgstr ""
 
 #. @locale Habari tried to get a flag that doesn't exist
-#: classes/bitmask.php:163
+#: classes/bitmask.php:167
 msgid "Bitmask cannot get non-existent flag"
 msgstr ""
 
-#: classes/bitmask.php:185
+#: classes/bitmask.php:189
 msgid "full"
 msgstr "pełny"
 
-#: classes/bitmask.php:194 classes/logentry.php:33
+#: classes/bitmask.php:198 classes/logentry.php:33
 msgid "none"
 msgstr "żaden"
 
@@ -745,55 +749,55 @@ msgstr ""
 msgid "Unable to fetch response body for a pending request."
 msgstr ""
 
-#: classes/comment.php:218 classes/user.php:86
+#: classes/comment.php:304 classes/user.php:86
 msgid "Anonymous"
 msgstr "Anonim"
 
-#: classes/comment.php:400
+#: classes/comment.php:466
 msgid "Unapprove"
 msgstr "Cofnij akceptację"
 
-#: classes/comment.php:401
+#: classes/comment.php:467
 msgid "Approve"
 msgstr "Zatwierdź"
 
-#: classes/comment.php:402
+#: classes/comment.php:468
 msgid "Spam"
 msgstr "Spam"
 
-#: classes/comment.php:596
+#: classes/comment.php:663
 msgid "comment"
 msgstr ""
 
-#: classes/comment.php:597
+#: classes/comment.php:664
 msgid "comments"
 msgstr ""
 
-#: classes/comment.php:600
+#: classes/comment.php:667
 msgid "pingback"
 msgstr ""
 
-#: classes/comment.php:601
+#: classes/comment.php:668
 msgid "pingbacks"
 msgstr ""
 
-#: classes/comment.php:604
+#: classes/comment.php:671
 msgid "trackback"
 msgstr ""
 
-#: classes/comment.php:605
+#: classes/comment.php:672
 msgid "trackbacks"
 msgstr ""
 
-#: classes/comment.php:621
+#: classes/comment.php:688
 msgid "unapproved"
 msgstr ""
 
-#: classes/comment.php:622
+#: classes/comment.php:689
 msgid "approved"
 msgstr ""
 
-#: classes/comment.php:623
+#: classes/comment.php:690
 msgid "spam"
 msgstr ""
 
@@ -857,7 +861,7 @@ msgstr[2] "%s Komentarzy"
 msgid "Posts tagged with \"%s\""
 msgstr ""
 
-#: classes/databaseconnection.php:276
+#: classes/databaseconnection.php:278
 msgid "Attempt to fetch in class mode with a non-included class"
 msgstr "Próba przetworzenia w trybie klasy z niezawartą klasą"
 
@@ -928,7 +932,7 @@ msgstr ""
 #. @locale The string used between the last two items in the list of authors
 #. of a theme on the admin page (one, two, three *and* four).
 #: classes/format.php:264 classes/format.php:300 admin/plugin.php:38
-#: admin/themes.php:17 admin/themes.php:129
+#: admin/themes.php:17 admin/themes.php:114
 msgid " and "
 msgstr " i "
 
@@ -937,8 +941,8 @@ msgstr " i "
 msgid "Permissions to posts of type \"%s\""
 msgstr "Uprawnienia do postów typu \"%s\""
 
-#: classes/post.php:276 classes/post.php:990 classes/post.php:1304
-#: classes/acl.php:947 handlers/installhandler.php:1735
+#: classes/post.php:276 classes/post.php:980 classes/post.php:1353
+#: classes/acl.php:947 handlers/installhandler.php:1741
 msgid "Content"
 msgstr "Treść"
 
@@ -962,165 +966,182 @@ msgstr "Zaplanowany wpis %1$s (%2$s) opublikowany o %3$s."
 msgid "Post %1$s (%2$s) published."
 msgstr "Wpis %1$s (%2$s) został opublikowany."
 
-#: classes/post.php:975
+#: classes/post.php:965
 msgid "Preview Post"
 msgstr "Podgląd wpisu"
 
-#: classes/post.php:975
+#: classes/post.php:965
 msgid "View Post"
 msgstr "Pokaż wpis"
 
-#: classes/post.php:982
+#: classes/post.php:972
 msgid "Title"
 msgstr "Tytuł"
 
-#: classes/post.php:997
+#: classes/post.php:987
 msgid "Tags, separated by, commas"
 msgstr "Tagi, oddzielone przecinkami"
 
-#: classes/post.php:1026 handlers/admincommentshandler.php:60
+#: classes/post.php:1016 handlers/admincommentshandler.php:60
 #: admin/themes.php:34
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: classes/post.php:1028
+#: classes/post.php:1018
 msgid "Content State"
 msgstr "Status"
 
-#: classes/post.php:1035
+#: classes/post.php:1025
 msgid "Minor Edit"
 msgstr "Mała zmiana"
 
-#: classes/post.php:1039
+#: classes/post.php:1029
 msgid "Comments Allowed"
 msgstr "Komentarze dozwolone"
 
-#: classes/post.php:1041
+#: classes/post.php:1031
 msgid "Publication Time"
 msgstr "Czas publikacji"
 
-#: classes/post.php:1046
+#: classes/post.php:1036
 msgid "Content Address"
 msgstr "Adres"
 
-#: classes/post.php:1054 plugins/undelete/undelete.plugin.php:185
+#: classes/post.php:1067 plugins/habarisilo/habarisilo.plugin.php:542
+#: plugins/habarisilo/habarisilo.plugin.php:558
+#: handlers/adminusershandler.php:176 handlers/admincommentshandler.php:439
+#: admin/block_instances.php:25 admin/block_instances.php:37
+#: admin/group.php:130 admin/posts_items.php:32 admin/groups_item.php:11
+msgid "Delete"
+msgstr "Usuń"
+
+#: classes/post.php:1075 plugins/undelete/undelete.plugin.php:185
 #: plugins/flickrsilo/flickrsilo.plugin.php:943
 #: handlers/adminthemeshandler.php:161 themes/charcoal/theme.php:59
-#: admin/themes.php:93
+#: admin/themes.php:92
 msgid "Save"
 msgstr "Zapisz"
 
-#: classes/post.php:1085 handlers/adminpostshandler.php:31
+#: classes/post.php:1082
+msgid "Publish"
+msgstr "Opublikuj"
+
+#: classes/post.php:1121 handlers/adminpostshandler.php:31
 #: handlers/adminpostshandler.php:35
 msgid "You don't have permission to edit that post"
 msgstr "Nie masz uprawnień, aby edytować ten wpis"
 
-#: classes/post.php:1092
+#: classes/post.php:1128
 msgid "Changing content types is not allowed"
 msgstr "Zmiana typu treści jest niedozwolona"
 
-#: classes/post.php:1103
+#: classes/post.php:1139
 msgid "Creating that post type is denied"
 msgstr ""
 
-#: classes/post.php:1116
+#: classes/post.php:1152
 msgid "Editing that post type is denied"
 msgstr ""
 
-#: classes/post.php:1123
+#: classes/post.php:1159
 #, php-format
 msgid ""
 "The post %1$s was updated since you made changes.  Please review those "
 "changes before overwriting them."
 msgstr ""
 
-#: classes/post.php:1130
+#: classes/post.php:1166
 msgid "A post slug cannot be empty. Keeping old slug."
 msgstr ""
 
-#: classes/post.php:1192
+#: classes/post.php:1228
 msgid "The post !postname has been saved as !status."
 msgstr ""
 
-#: classes/post.php:1236
+#: classes/post.php:1240
+#, php-format
+msgid "Deleted the %1$s titled \"%2$s\"."
+msgstr "Usunięto %1$s zatytułowany \"%2$s\"."
+
+#: classes/post.php:1285
 msgid "Comments are disabled site-wide."
 msgstr ""
 
-#: classes/post.php:1241
+#: classes/post.php:1290
 msgid "Comments for this post are disabled."
 msgstr ""
 
-#: classes/post.php:1246
+#: classes/post.php:1295
 msgid "Commenting on this site requires authentication."
 msgstr ""
 
-#: classes/post.php:1251
+#: classes/post.php:1300
 msgid "You do not have permission to comment on this site."
 msgstr ""
 
-#: classes/post.php:1261
+#: classes/post.php:1310
 msgid "Name <span class=\"required\">*Required</span>"
 msgstr "Imię / Pseudonim <span class=\"required\">*Wymagane</span>"
 
-#: classes/post.php:1267
+#: classes/post.php:1316
 msgid "The Name field value is required"
 msgstr "Pole Imię / Pseudonim jest wymagane"
 
-#: classes/post.php:1277 classes/post.php:1280
+#: classes/post.php:1326 classes/post.php:1329
 msgid "The Email field value must be a valid email address"
 msgstr "Wartość pola E-Mail musi zawierać poprawną formę"
 
-#: classes/post.php:1281
+#: classes/post.php:1330
 msgid "Email <span class=\"required\">*Required</span>"
 msgstr "E-Mail <span class=\"required\">*Wymagane</span>"
 
-#: classes/post.php:1284 handlers/adminusershandler.php:101
+#: classes/post.php:1333 handlers/adminusershandler.php:101
 msgid "Email"
 msgstr "E-mail"
 
-#: classes/post.php:1290 themes/charcoal/theme.php:223
+#: classes/post.php:1339 themes/charcoal/theme.php:223
 msgid "Website"
 msgstr "Strona WWW"
 
-#: classes/post.php:1293
+#: classes/post.php:1342
 msgid "The Website field value must be a valid URL"
 msgstr ""
 
-#: classes/post.php:1303
+#: classes/post.php:1352
 msgid "The Comment field value is required"
 msgstr ""
 
-#: classes/post.php:1310 plugins/coredashmodules/coredashmodules.plugin.php:95
-#: plugins/habarisilo/habarisilo.plugin.php:525 themes/mzingi/theme.php:115
+#: classes/post.php:1359 plugins/coredashmodules/coredashmodules.plugin.php:95
+#: plugins/habarisilo/habarisilo.plugin.php:525 themes/mzingi/theme.php:192
 #: themes/charcoal/theme.php:226
 msgid "Submit"
 msgstr "Wyślij"
 
-#: classes/post.php:1710
+#: classes/post.php:1759
 msgid "Entry"
 msgstr "Wpis"
 
-#: classes/post.php:1711
+#: classes/post.php:1760
 msgid "Entries"
 msgstr "Wpisy"
 
-#: classes/post.php:1714
+#: classes/post.php:1763
 msgid "Page"
 msgstr "Strona"
 
-#: classes/post.php:1715
+#: classes/post.php:1764
 msgid "Pages"
 msgstr "Strony"
 
-#: classes/post.php:1730
+#: classes/post.php:1779
 msgid "draft"
 msgstr ""
 
-#: classes/post.php:1731
+#: classes/post.php:1780
 msgid "published"
 msgstr ""
 
-#: classes/post.php:1732
+#: classes/post.php:1781
 msgid "scheduled"
 msgstr ""
 
@@ -1250,21 +1271,21 @@ msgstr "Błędny hash"
 msgid "Unbalanced braces."
 msgstr "Nieparzysta ilość klamr."
 
-#: classes/utils.php:1245
+#: classes/utils.php:1249
 msgid "Not set"
 msgstr ""
 
-#: classes/comments.php:457
+#: classes/comments.php:466
 #, php-format
 msgid "Comment %1$s moderated from %2$s"
 msgstr "Komentarz %1$s moderowany z %2$s"
 
-#: classes/comments.php:464
+#: classes/comments.php:473
 #, php-format
 msgid "Comment %1$d moderated"
 msgstr ""
 
-#: classes/comments.php:661
+#: classes/comments.php:690
 #, php-format
 msgid "Comment %1$s deleted from %2$s"
 msgstr "Komentarz %1$s został usunięty z %2$s"
@@ -1295,22 +1316,22 @@ msgid ""
 "prior to activation."
 msgstr ""
 
-#: classes/themes.php:239
+#: classes/themes.php:240
 #, php-format
 msgid "Activated Theme: %s"
 msgstr "Aktywny styl: %s"
 
-#: classes/themes.php:260
+#: classes/themes.php:261
 #, php-format
 msgid "Previewed Theme: %s"
 msgstr "Podglądany motyw: %s"
 
-#: classes/themes.php:275
+#: classes/themes.php:276
 #, php-format
 msgid "Canceled Theme Preview: %s"
 msgstr "Anulowano podgląd motywu: %s"
 
-#: classes/themes.php:306
+#: classes/themes.php:307
 msgid "Theme not installed."
 msgstr "Motyw nie został zainstalowany."
 
@@ -1351,16 +1372,16 @@ msgstr "Grupa %1$s: Dostęp do %2$s zmieniony na %3$s."
 msgid "Group %1$s: Permission to %2$s revoked."
 msgstr "Grupa %1$s: Prawo do %2$s odebrane."
 
-#: classes/acl.php:830 classes/acl.php:832 handlers/installhandler.php:718
+#: classes/acl.php:830 classes/acl.php:832 handlers/installhandler.php:724
 msgid "admin"
 msgstr "administrator"
 
-#: classes/acl.php:835 classes/acl.php:837 handlers/installhandler.php:729
+#: classes/acl.php:835 classes/acl.php:837 handlers/installhandler.php:735
 msgid "anonymous"
 msgstr "gość"
 
-#: classes/acl.php:866 classes/acl.php:868 handlers/installhandler.php:1592
-#: handlers/installhandler.php:1594
+#: classes/acl.php:866 classes/acl.php:868 handlers/installhandler.php:1598
+#: handlers/installhandler.php:1600
 msgid "authenticated"
 msgstr "uwierzytelniony"
 
@@ -1408,7 +1429,7 @@ msgstr "Użyj importera"
 msgid "Add, remove, and edit users"
 msgstr "Dodaj, usuń i edytuj użytkowników"
 
-#: classes/acl.php:916 handlers/installhandler.php:1630
+#: classes/acl.php:916 handlers/installhandler.php:1636
 msgid "Edit own profile"
 msgstr "Edytuj własny profil"
 
@@ -1420,11 +1441,11 @@ msgstr "Zarządaj grupami i uprawnieniami"
 msgid "Manage logs"
 msgstr "Zarządzaj logami"
 
-#: classes/acl.php:919 handlers/installhandler.php:1635
+#: classes/acl.php:919 handlers/installhandler.php:1641
 msgid "Manage dashboard modules"
 msgstr "Zarządzaj modułami kokpitu"
 
-#: classes/acl.php:921 handlers/installhandler.php:1581
+#: classes/acl.php:921 handlers/installhandler.php:1587
 msgid "Permissions on one's own posts"
 msgstr "Uprawnienia na własnych wpisach"
 
@@ -1722,7 +1743,7 @@ msgstr ""
 
 #: plugins/flickrsilo/flickrsilo.plugin.php:648
 #: plugins/flickrsilo/flickrsilo.plugin.php:1055
-#: plugins/coreblocks/coreblocks.plugin.php:395 themes/mzingi/searchform.php:6
+#: plugins/coreblocks/coreblocks.plugin.php:395 themes/mzingi/theme.php:155
 msgid "Search"
 msgstr "Szukaj"
 
@@ -2157,7 +2178,7 @@ msgstr "Edytuj '%s'"
 
 #: plugins/coredashmodules/dashboard.block.latest_entries.php:11
 #: admin/plugin.php:30 admin/posts_items.php:24 admin/themes.php:10
-#: admin/themes.php:122
+#: admin/themes.php:107
 msgid "by"
 msgstr "przez"
 
@@ -2181,8 +2202,8 @@ msgstr ""
 msgid "Custom class for the tree's ordered list element"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:149 plugins/menus/menus.plugin.php:150
-#: plugins/menus/menus.plugin.php:233 plugins/menus/menus.plugin.php:234
+#: plugins/menus/menus.plugin.php:149 plugins/menus/menus.plugin.php:233
+#: plugins/menus/menus.plugin.php:234
 msgid "Menus"
 msgstr ""
 
@@ -2276,7 +2297,7 @@ msgstr ""
 msgid "You must supply a valid menu name"
 msgstr ""
 
-#: plugins/menus/menus.plugin.php:571 handlers/userhandler.php:153
+#: plugins/menus/menus.plugin.php:571 handlers/userhandler.php:156
 #: themes/charcoal/theme.php:219
 msgid "Name"
 msgstr "Nazwa"
@@ -2418,8 +2439,8 @@ msgstr "Linki do wyświetlenia:"
 msgid "Logout"
 msgstr "Wyloguj"
 
-#: plugins/coreblocks/coreblocks.plugin.php:356 handlers/userhandler.php:155
-#: handlers/userhandler.php:157 themes/charcoal/header.php:44
+#: plugins/coreblocks/coreblocks.plugin.php:356 handlers/userhandler.php:171
+#: handlers/userhandler.php:174 themes/charcoal/header.php:44
 msgid "Login"
 msgstr "Zaloguj się"
 
@@ -2519,15 +2540,6 @@ msgstr "Katalog:"
 #: plugins/habarisilo/habarisilo.plugin.php:541
 msgid "Are you sure you want to delete this directory?"
 msgstr "Czy na pewno usunąć ten katalog?"
-
-#: plugins/habarisilo/habarisilo.plugin.php:542
-#: plugins/habarisilo/habarisilo.plugin.php:558
-#: handlers/adminusershandler.php:176 handlers/admincommentshandler.php:439
-#: admin/block_instances.php:25 admin/block_instances.php:37
-#: admin/group.php:130 admin/posts_items.php:32 admin/publish.php:18
-#: admin/groups_item.php:11
-msgid "Delete"
-msgstr "Usuń"
 
 #: plugins/habarisilo/habarisilo.plugin.php:554
 msgid "File:"
@@ -2644,9 +2656,9 @@ msgstr "Nazwa użytkownika"
 msgid "E-Mail"
 msgstr "E-mail"
 
-#: handlers/adminusershandler.php:36 handlers/userhandler.php:154
-#: installer/db_setup.php:65 installer/db_setup.php:112
-#: installer/db_setup.php:193
+#: handlers/adminusershandler.php:36 handlers/userhandler.php:159
+#: themes/mzingi/theme.php:199 installer/db_setup.php:65
+#: installer/db_setup.php:112 installer/db_setup.php:193
 msgid "Password"
 msgstr "Hasło"
 
@@ -2865,7 +2877,7 @@ msgstr "Twój komentarz czeka na zatwierdzenie."
 
 #: handlers/admintagshandler.php:41 handlers/admintagshandler.php:67
 #: handlers/admingroupshandler.php:175 handlers/admingroupshandler.php:284
-#: handlers/admincommentshandler.php:521 handlers/adminpostshandler.php:455
+#: handlers/admincommentshandler.php:521 handlers/adminpostshandler.php:422
 msgid "WSSE authentication failed."
 msgstr "Autoryzacja WSSE zakończyła się niepowodzeniem."
 
@@ -3103,8 +3115,8 @@ msgstr "Hasło nie pasuje."
 msgid "Only printable characters are allowed."
 msgstr ""
 
-#: handlers/installhandler.php:159 handlers/installhandler.php:1862
-#: handlers/installhandler.php:1933
+#: handlers/installhandler.php:159 handlers/installhandler.php:1900
+#: handlers/installhandler.php:1971
 msgid "Allowed characters are A-Z, a-z and \"_\"."
 msgstr "Dozwolone znaki to:  A-Z, a-z oraz \"_\"."
 
@@ -3117,7 +3129,7 @@ msgid "Habari successfully installed."
 msgstr "Habari został zainstalowany."
 
 #: handlers/installhandler.php:228 handlers/adminpluginshandler.php:96
-#: handlers/adminpluginshandler.php:100 admin/themes.php:145
+#: handlers/adminpluginshandler.php:100 admin/themes.php:130
 msgid "Activate"
 msgstr "Aktywuj"
 
@@ -3133,7 +3145,7 @@ msgstr "Nazwa bazy danych jest wymagana."
 msgid "Host is required."
 msgstr "Nazwa hosta jest wymagana."
 
-#: handlers/installhandler.php:452 handlers/installhandler.php:663
+#: handlers/installhandler.php:452 handlers/installhandler.php:669
 msgid "Problem connecting to supplied database credentials"
 msgstr "Wystąpił błąd podczas próby połączenia się z bazą danych"
 
@@ -3154,47 +3166,51 @@ msgstr "Wystąpił problem przy tworzeniu słownika tagów"
 msgid "Problem creating base post types"
 msgstr "Problem ze stworzeniem podstawowych typów postów"
 
-#: handlers/installhandler.php:503
+#: handlers/installhandler.php:498
+msgid "Problem creating base comment types and statuses"
+msgstr ""
+
+#: handlers/installhandler.php:509
 msgid "Problem creating admin user."
 msgstr "Problem podczas tworzenia użytkownika administratora."
 
-#: handlers/installhandler.php:509
+#: handlers/installhandler.php:515
 msgid "Problem creating admin group."
 msgstr "Błąd podczas tworzenia grupy administratorów."
 
-#: handlers/installhandler.php:520
+#: handlers/installhandler.php:526
 msgid "Problem creating first post."
 msgstr "Problem podczas tworzenia pierwszego wpisu."
 
-#: handlers/installhandler.php:557 handlers/installhandler.php:590
-#: handlers/installhandler.php:1877 handlers/installhandler.php:1948
+#: handlers/installhandler.php:563 handlers/installhandler.php:596
+#: handlers/installhandler.php:1915 handlers/installhandler.php:1986
 msgid "Access denied. Make sure these credentials are valid."
 msgstr "Dostęp zabroniony. Upewnij się, że dane identyfikacyjne są poprawne."
 
-#: handlers/installhandler.php:560 handlers/installhandler.php:593
-#: handlers/installhandler.php:1881 handlers/installhandler.php:1952
+#: handlers/installhandler.php:566 handlers/installhandler.php:599
+#: handlers/installhandler.php:1919 handlers/installhandler.php:1990
 msgid "That database does not exist."
 msgstr "Baza danych nie istnieje."
 
-#: handlers/installhandler.php:563 handlers/installhandler.php:596
-#: handlers/installhandler.php:1885 handlers/installhandler.php:1956
+#: handlers/installhandler.php:569 handlers/installhandler.php:602
+#: handlers/installhandler.php:1923 handlers/installhandler.php:1994
 msgid "Could not connect to host."
 msgstr "Nie mogę połączyć się z hostem."
 
-#: handlers/installhandler.php:624 handlers/installhandler.php:2004
+#: handlers/installhandler.php:630 handlers/installhandler.php:2042
 #, php-format
 msgid ""
 "Cannot write to %s. The SQLite data file is not writable by the web server."
 msgstr "Nie można utworzyć %s. Plik danych SQLite nie jest zapisywalny przez serwer."
 
-#: handlers/installhandler.php:628 handlers/installhandler.php:1997
+#: handlers/installhandler.php:634 handlers/installhandler.php:2035
 #, php-format
 msgid ""
 "Cannot write to %s directory. SQLite requires that the directory that holds "
 "the DB file be writable by the web server."
 msgstr "Nie można utworzyć katalogu %s. SQLite wymaga, aby katalog przechowujący plik bazy danych był zapisywalny przez sewer."
 
-#: handlers/installhandler.php:637
+#: handlers/installhandler.php:643
 #, php-format
 msgid ""
 "Cannot write to %s directory. The SQLite data file does not exist, and it "
@@ -3202,21 +3218,21 @@ msgid ""
 "directory containing the database file be writable by the web server."
 msgstr "Nie można zapisywać w katalogu %s. Plik danych SQLite nie istnieje i nie może zostać utworzony w danym katalogu. SQLite wymaga, aby katalog zawierający plik bazy danych był zapisywalny przez serwer."
 
-#: handlers/installhandler.php:788 handlers/installhandler.php:1712
-#: handlers/installhandler.php:1818
+#: handlers/installhandler.php:794 handlers/installhandler.php:1718
+#: handlers/installhandler.php:1824
 msgid "Trim the log table"
 msgstr "Oczyść tabele logów"
 
-#: handlers/installhandler.php:791 handlers/installhandler.php:1720
-#: handlers/installhandler.php:1821
+#: handlers/installhandler.php:797 handlers/installhandler.php:1726
+#: handlers/installhandler.php:1827
 msgid "Perform a check for plugin updates."
 msgstr ""
 
-#: handlers/installhandler.php:794 handlers/installhandler.php:1828
+#: handlers/installhandler.php:800 handlers/installhandler.php:1834
 msgid "Perform session garbage collection."
 msgstr ""
 
-#: handlers/installhandler.php:838
+#: handlers/installhandler.php:844
 msgid ""
 "This site is running <a href=\"http://habariproject.org/\">Habari</a>, a "
 "state-of-the-art publishing platform!  Habari is a community-driven project "
@@ -3225,47 +3241,47 @@ msgid ""
 " more!"
 msgstr "Ta strona działa na <a href=\"http://habariproject.org/\">Habari</a>. Habari to społecznościowy projekt tworzony przez ludzi z całego świata. Odwiedź <a href=\"http://habariproject.org/\">http://habariproject.org/</a>, aby dowiedzieć się więcej!"
 
-#: handlers/installhandler.php:901
+#: handlers/installhandler.php:907
 msgid "currently unsupported."
 msgstr "aktualnie nie wspierane."
 
-#: handlers/installhandler.php:1009 handlers/installhandler.php:1038
+#: handlers/installhandler.php:1015 handlers/installhandler.php:1044
 msgid "No admin user found"
 msgstr "Nie znaleziono administratora"
 
-#: handlers/installhandler.php:1442
+#: handlers/installhandler.php:1448
 msgid "Site Maintenance"
 msgstr "Prace nad stroną"
 
-#: handlers/installhandler.php:1443
+#: handlers/installhandler.php:1449
 msgid "Habari is currently being upgraded."
 msgstr "Habari jest aktualizowane."
 
-#: handlers/installhandler.php:1444
+#: handlers/installhandler.php:1450
 msgid "Try again in a little while."
 msgstr "Spróbuj ponownie za chwilę."
 
-#: handlers/installhandler.php:1457
+#: handlers/installhandler.php:1463
 msgid "Truncate the log table"
 msgstr "Wyczyść tabelę logów"
 
-#: handlers/installhandler.php:1735
+#: handlers/installhandler.php:1741
 msgid "Permissions to other users' unpublished posts"
 msgstr "Uprawnienia do nieopublikowanych wpisów innych użytkowników"
 
-#: handlers/installhandler.php:1844 handlers/installhandler.php:1915
+#: handlers/installhandler.php:1882 handlers/installhandler.php:1953
 msgid "The database host field was left empty."
 msgstr "Pole z nazwą hosta bazy danych jest puste."
 
-#: handlers/installhandler.php:1850 handlers/installhandler.php:1921
+#: handlers/installhandler.php:1888 handlers/installhandler.php:1959
 msgid "The database name field was left empty."
 msgstr "Pole z nazwą bazy danych jest puste."
 
-#: handlers/installhandler.php:1856 handlers/installhandler.php:1927
+#: handlers/installhandler.php:1894 handlers/installhandler.php:1965
 msgid "The database user field was left empty."
 msgstr "Pole z nazwą użytkownika dla bazy danych jest puste."
 
-#: handlers/installhandler.php:1987
+#: handlers/installhandler.php:2025
 msgid "The database file was left empty."
 msgstr "Plik bazy danych pozostawiony został pusty."
 
@@ -3415,12 +3431,9 @@ msgstr ""
 msgid "Any"
 msgstr ""
 
-#: handlers/admincommentshandler.php:45 themes/mzingi/commentform.php:29
+#: handlers/admincommentshandler.php:45
 msgid "Comment"
-msgid_plural "Comments"
-msgstr[0] "Komentarz"
-msgstr[1] "Komentarze"
-msgstr[2] "Komentarzy"
+msgstr "Komentarzy"
 
 #: handlers/admincommentshandler.php:51
 msgid "Author"
@@ -3507,10 +3520,7 @@ msgstr "Usuń ten komentarz"
 msgid "Edit this comment"
 msgstr "Edytuj ten komentarz"
 
-#: handlers/admincommentshandler.php:440 themes/mzingi/tag.php:25
-#: themes/mzingi/search.php:25 themes/mzingi/entry.multiple.php:23
-#: themes/mzingi/page.single.php:18 themes/mzingi/entry.single.php:30
-#: themes/mzingi/home.php:25 themes/charcoal/page.single.php:23
+#: handlers/admincommentshandler.php:440 themes/charcoal/page.single.php:23
 #: themes/charcoal/entry.single.php:41 themes/charcoal/home.php:35
 #: admin/posts_items.php:30 admin/groups_item.php:10
 msgid "Edit"
@@ -3520,7 +3530,7 @@ msgstr "Edytuj"
 msgid "No comments selected."
 msgstr "Nie wybrano żadnych komentarzy."
 
-#: handlers/admincommentshandler.php:543 handlers/adminpostshandler.php:475
+#: handlers/admincommentshandler.php:543 handlers/adminpostshandler.php:442
 #, php-format
 msgid "Unknown action \"%s\""
 msgstr "Nieznana akcja „%s”"
@@ -3557,35 +3567,43 @@ msgstr[0] "Odrzucono %d komentarz"
 msgstr[1] "Odrzucono %d komentarze"
 msgstr[2] "Odrzucono %d komentarzy"
 
-#: handlers/userhandler.php:37
+#: handlers/userhandler.php:30
+msgid "You must supply a username to reset its password."
+msgstr ""
+
+#: handlers/userhandler.php:38
 #, php-format
 msgid "Please visit %1$s to reset your password."
 msgstr "Proszę odwiedzić %1$s aby zresetować hasło."
 
-#: handlers/userhandler.php:39
+#: handlers/userhandler.php:40
 #, php-format
 msgid "[%1$s] Password reset request for %2$s"
 msgstr "[%1$s] Żądanie zmiany hasła dla %2$s"
 
-#: handlers/userhandler.php:42
+#: handlers/userhandler.php:43
 msgid "A password reset request has been sent to the user."
 msgstr "Prośba o zresetowanie hasła została wysłana do użytkownika."
 
-#: handlers/userhandler.php:109
+#: handlers/userhandler.php:111
 msgid "Bad credentials"
 msgstr "Nieprawidłowe dane uwierzytelniające"
 
-#: handlers/userhandler.php:152
+#: handlers/userhandler.php:153 admin/header.php:75
+msgid "Go to Site"
+msgstr "Idź do strony"
+
+#: handlers/userhandler.php:155
 msgid ""
 "Please enter the username you wish to reset the password for.  A unique "
 "password reset link will be emailed to that user."
 msgstr ""
 
-#: handlers/userhandler.php:156 handlers/userhandler.php:158
+#: handlers/userhandler.php:173 handlers/userhandler.php:175
 msgid "Reset password"
 msgstr "Zresetuj hasło"
 
-#: handlers/userhandler.php:198
+#: handlers/userhandler.php:220
 #, php-format
 msgid ""
 "Your password for %1$s has been reset.  Your credentials are as follows---\n"
@@ -3593,20 +3611,20 @@ msgid ""
 "Password: %3$s"
 msgstr "Twoje hasło dla %1$s zostało zresetowane. Twoje dane uwierzytelniające są następujące---\nNazwa użytkownika: %2$s\nHasło: %3$s"
 
-#: handlers/userhandler.php:200
+#: handlers/userhandler.php:222
 #, php-format
 msgid "[%1$s] Password has been reset for %2$s"
 msgstr "[%1$s] Hasło zostało zresetowane dla %2$s"
 
-#: handlers/userhandler.php:201
+#: handlers/userhandler.php:223
 msgid "A new password has been sent to the user."
 msgstr "Nowe hasło zostało wysłane do użytkownika."
 
-#: handlers/userhandler.php:204
+#: handlers/userhandler.php:226
 msgid "There was a problem resetting the password.  It was not reset."
 msgstr "Wystąpił błąd podczas resetowania hasła. Nie zostało zresetowane."
 
-#: handlers/userhandler.php:212
+#: handlers/userhandler.php:234
 msgid "The supplied password reset token has expired or is invalid."
 msgstr "Podany token zresetowania hasła wygasł lub jest nieprawidłowy."
 
@@ -3723,28 +3741,23 @@ msgstr "Tworzenie wpisów typu %s jest zabronione"
 msgid "Publish %s"
 msgstr "Publikuj %s"
 
-#: handlers/adminpostshandler.php:106
-#, php-format
-msgid "Deleted the %1$s titled \"%2$s\"."
-msgstr "Usunięto %1$s zatytułowany \"%2$s\"."
-
-#: handlers/adminpostshandler.php:287
+#: handlers/adminpostshandler.php:254
 msgid "My Posts"
 msgstr ""
 
-#: handlers/adminpostshandler.php:289 handlers/adminpostshandler.php:290
+#: handlers/adminpostshandler.php:256 handlers/adminpostshandler.php:257
 msgid "Manage Posts"
 msgstr "Zarządzaj wpisami"
 
-#: handlers/adminpostshandler.php:321
+#: handlers/adminpostshandler.php:288
 msgid "Root"
 msgstr "Katalog główny"
 
-#: handlers/adminpostshandler.php:486
+#: handlers/adminpostshandler.php:453
 msgid "You did not have permission to delete some posts."
 msgstr ""
 
-#: handlers/adminpostshandler.php:489
+#: handlers/adminpostshandler.php:456
 #, php-format
 msgid "Deleted %d post"
 msgid_plural "Deleted %d posts"
@@ -3752,169 +3765,67 @@ msgstr[0] "Usunięto %d wpis."
 msgstr[1] "Usunięto %d wpisy."
 msgstr[2] "Usunięto %d wpisów."
 
-#: themes/mzingi/404.php:9
-msgid "It seems you couldn't find what you are looking for."
-msgstr "Wygląda na to, że nie możesz znaleźć czegoś, czego szukasz."
-
-#: themes/mzingi/404.php:9
-msgid "Perhaps you can try searching."
-msgstr "Może spróbuj użyć wyszukiwarki."
-
-#: themes/mzingi/commentform.php:9
-msgid "to"
-msgstr "na"
-
-#: themes/mzingi/commentform.php:10
-msgid "Feed for this Entry"
-msgstr "Kanał RSS dla tego wpisu"
-
-#: themes/mzingi/commentform.php:46
-msgid "Permanent Link to this Comment"
-msgstr "Stały link do tego komentarza"
-
-#: themes/mzingi/commentform.php:47
-msgid "Comment by"
-msgstr "Skomentował(a)"
-
-#: themes/mzingi/commentform.php:48 admin/posts_items.php:25
-#: admin/comments_items.php:19
-msgid "on"
-msgstr "w dniu"
-
-#: themes/mzingi/commentform.php:48
-msgid "Time of this comment"
-msgstr "Komentarz dodany"
-
-#. @locale Date formats according to
-#. http://php.net/manual/en/function.date.php
-#: themes/mzingi/commentform.php:48
-msgid "M j, Y h:ia"
-msgstr ""
-
-#: themes/mzingi/commentform.php:48
-msgid "In moderation"
-msgstr "W moderacji"
-
-#: themes/mzingi/commentform.php:58
-msgid "<li>There are currently no comments.</li>"
-msgstr ""
-
-#. @locale Date formats according to
-#. http://php.net/manual/en/function.date.php
-#: themes/mzingi/tag.php:15 themes/mzingi/search.php:15
-#: themes/mzingi/sidebar.php:27
-msgid "F j, Y"
-msgstr ""
-
-#: themes/mzingi/tag.php:20 themes/mzingi/search.php:20
-#: themes/mzingi/entry.multiple.php:18 themes/mzingi/entry.single.php:26
-#: themes/mzingi/home.php:20
-msgid "Tagged:"
-msgstr "Oznaczono tagami:"
-
-#: themes/mzingi/tag.php:25 themes/mzingi/search.php:25
-#: themes/mzingi/entry.multiple.php:23 themes/mzingi/page.single.php:18
-#: themes/mzingi/entry.single.php:30 themes/mzingi/home.php:25
-#: themes/charcoal/page.single.php:23 themes/charcoal/entry.single.php:41
-#: themes/charcoal/home.php:35
-msgid "Edit post"
-msgstr "Edytuj wpis"
-
-#: themes/mzingi/tag.php:31 themes/mzingi/search.php:31
-msgid "Newer Results"
-msgstr "Nowsze wyniki"
-
-#: themes/mzingi/tag.php:31 themes/mzingi/search.php:31
-msgid "Older Results"
-msgstr "Starsze wyniki"
-
-#: themes/mzingi/theme.php:64
+#: themes/mzingi/theme.php:55
 #, php-format
 msgid "Posts tagged with %s"
 msgstr ""
 
-#: themes/mzingi/theme.php:67
+#: themes/mzingi/theme.php:58
 #, php-format
 msgid "Posts not tagged with %s"
 msgstr ""
 
-#: themes/mzingi/theme.php:70
+#: themes/mzingi/theme.php:61
 #, php-format
 msgid "Posts tagged with %s and not with %s"
 msgstr ""
 
-#: themes/mzingi/theme.php:92
-msgid "About You"
-msgstr "Informacje o Tobie"
-
-#: themes/mzingi/theme.php:104
-msgid "Web Address:"
-msgstr "Adres WWW:"
-
-#: themes/mzingi/theme.php:106
-msgid "<p><em><small>Email address is not published</small></em></p>"
-msgstr "<p><em><small>Adres E-mail nie jest publikowany</small></em></p>"
-
-#: themes/mzingi/theme.php:108
-msgid "Add to the Discussion"
-msgstr "Dołącz do dyskusji"
-
-#: themes/mzingi/theme.php:113
-msgid "Message: (Required)"
-msgstr "Wiadomość: (Wymagane)"
-
-#: themes/mzingi/search.php:9
-msgid "Results for search of"
-msgstr "Wyniki wyszukiwania"
-
-#: themes/mzingi/search.php:33
-msgid "No results for"
-msgstr "Brak rezultatów dla"
-
-#: themes/mzingi/searchform.php:6
-msgid "Go!"
-msgstr "Idź!"
-
-#: themes/mzingi/entry.multiple.php:29 themes/mzingi/home.php:33
-#: themes/charcoal/tag.php:41 themes/charcoal/multiple.php:42
-#: themes/charcoal/search.php:49 themes/charcoal/home.php:72
+#: themes/mzingi/theme.php:122 themes/charcoal/tag.php:41
+#: themes/charcoal/multiple.php:42 themes/charcoal/search.php:49
+#: themes/charcoal/home.php:72
 msgid "Newer Posts"
 msgstr "Nowsze wpisy"
 
-#: themes/mzingi/entry.multiple.php:29 themes/mzingi/home.php:33
-#: themes/charcoal/tag.php:42 themes/charcoal/multiple.php:43
-#: themes/charcoal/search.php:50 themes/charcoal/home.php:73
+#: themes/mzingi/theme.php:127 themes/charcoal/tag.php:42
+#: themes/charcoal/multiple.php:43 themes/charcoal/search.php:50
+#: themes/charcoal/home.php:73
 msgid "Older Posts"
 msgstr "Starsze wpisy"
 
-#: themes/mzingi/sidebar.php:6
-msgid "Subscribe to Feed"
-msgstr "Zasubskrybuj kanał"
-
-#: themes/mzingi/sidebar.php:7
-msgid "Navigation"
-msgstr "Nawigacja"
-
-#: themes/mzingi/sidebar.php:9
-msgid "Home"
-msgstr "Start"
-
-#: themes/mzingi/sidebar.php:20
-msgid "Asides"
-msgstr "Poboczne"
-
-#: themes/mzingi/footer.php:5
-msgid "is powered by"
-msgstr "jest zasilana przez"
-
-#: themes/mzingi/loginform.php:6
-#, php-format
-msgid "You are logged in as %s."
+#: themes/mzingi/theme.php:132
+msgid "Newer Reults"
 msgstr ""
 
-#: themes/mzingi/loginform.php:7
-#, php-format
-msgid "Want to <a href=\"%s\">log out</a>?"
+#: themes/mzingi/theme.php:137
+msgid "Older Reults"
+msgstr ""
+
+#: themes/mzingi/theme.php:159
+msgid "Go!"
+msgstr "Idź!"
+
+#: themes/mzingi/theme.php:169
+msgid "About You"
+msgstr "Informacje o Tobie"
+
+#: themes/mzingi/theme.php:181
+msgid "Web Address:"
+msgstr "Adres WWW:"
+
+#: themes/mzingi/theme.php:183
+msgid "<p><em><small>Email address is not published</small></em></p>"
+msgstr "<p><em><small>Adres E-mail nie jest publikowany</small></em></p>"
+
+#: themes/mzingi/theme.php:185
+msgid "Add to the Discussion"
+msgstr "Dołącz do dyskusji"
+
+#: themes/mzingi/theme.php:190
+msgid "Message: (Required)"
+msgstr "Wiadomość: (Wymagane)"
+
+#: themes/mzingi/theme.php:198
+msgid "User name"
 msgstr ""
 
 #: themes/wazi/comment.php:17
@@ -4132,6 +4043,11 @@ msgstr "{komentarze}"
 #: themes/charcoal/sidebar.php:12
 msgid "Powered by Habari"
 msgstr "Powered by Habari"
+
+#: themes/charcoal/page.single.php:23 themes/charcoal/entry.single.php:41
+#: themes/charcoal/home.php:35
+msgid "Edit post"
+msgstr "Edytuj wpis"
 
 #: themes/charcoal/comments.php:28
 msgid "Time of this comment - Click for comment permalink"
@@ -4679,11 +4595,7 @@ msgstr ""
 msgid "Login to %s"
 msgstr "Zaloguj się do %s"
 
-#: admin/login.php:39 admin/header.php:74
-msgid "Go to Site"
-msgstr "Idź do strony"
-
-#: admin/login.php:41 admin/footer.php:5
+#: admin/login.php:40 admin/footer.php:5
 msgid "Go to the Habari site"
 msgstr "Przejdź na stronę Habari"
 
@@ -4996,6 +4908,10 @@ msgstr "Szukaj innych %s wpisów"
 msgid "Search for other items by %s"
 msgstr "Szukaj innych wpisów użytkownika %s"
 
+#: admin/posts_items.php:25 admin/comments_items.php:19
+msgid "on"
+msgstr "w dniu"
+
 #: admin/posts_items.php:25
 #, php-format
 msgid "Search for other items from %s"
@@ -5022,11 +4938,7 @@ msgstr "Usuń ten element"
 msgid "No posts could be found to match the query criteria."
 msgstr "Nie znaleziono żadnych wpisów pasujących do kryteriów wyszukiwania."
 
-#: admin/publish.php:32
-msgid "Publish"
-msgstr "Opublikuj"
-
-#: admin/publish.php:66
+#: admin/publish.php:45
 msgid ""
 "You did not save the changes you made. \\nLeaving this page will result in "
 "the loss of data."
@@ -5210,7 +5122,7 @@ msgstr "v"
 msgid "Update Available"
 msgstr "Dostępna aktualizacja"
 
-#: admin/themes.php:52 admin/themes.php:157
+#: admin/themes.php:52 admin/themes.php:142
 #, php-format
 msgid "%1$s is licensed under the %2$s"
 msgstr "%1$s jest licencjonowany na zasadach %2$s"
@@ -5219,28 +5131,28 @@ msgstr "%1$s jest licencjonowany na zasadach %2$s"
 msgid "General"
 msgstr ""
 
-#: admin/themes.php:85
+#: admin/themes.php:84
 msgid "Areas"
 msgstr ""
 
-#: admin/themes.php:115
+#: admin/themes.php:100
 msgid "Available Themes"
 msgstr "Dostępne motywy"
 
-#: admin/themes.php:135
+#: admin/themes.php:120
 msgid "Legacy theme."
 msgstr "Dziedziczony motyw."
 
-#: admin/themes.php:137
+#: admin/themes.php:122
 #, php-format
 msgid "This theme requires the parent theme named \"%s\"."
 msgstr ""
 
-#: admin/themes.php:141
+#: admin/themes.php:126
 msgid "End Preview"
 msgstr "Zakończ podgląd"
 
-#: admin/themes.php:143
+#: admin/themes.php:128
 msgid "Preview"
 msgstr "Podgląd"
 
